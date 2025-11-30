@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visit Jordan - Petra & Beyond</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Playfair+Display:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              petra: {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0c1b3',
+                400: '#d2a494',
+                500: '#c28675',
+                600: '#a36353',
+                700: '#8c3a3a', // Petra Red
+                800: '#6d2e2e',
+                900: '#4a1d1d',
+              },
+              sand: {
+                50: '#fbf9f3',
+                100: '#f5f0e1',
+                200: '#ede0c3',
+                300: '#e3cea0',
+                400: '#d6b87a',
+                500: '#bca37f', // Gold/Sand
+                600: '#9e8460',
+                700: '#7d6648',
+                800: '#5e4c34',
+                900: '#3f3222',
+              }
+            },
+            fontFamily: {
+              sans: ['Cairo', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              jp: ['Noto Sans JP', 'sans-serif'],
+              sc: ['Noto Sans SC', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Cairo', sans-serif;
+      }
+      /* Language specific font overrides */
+      :lang(ja) body { font-family: 'Noto Sans JP', sans-serif; }
+      :lang(zh) body { font-family: 'Noto Sans SC', sans-serif; }
+      
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* VISUAL EDITOR STYLES */
+      .visual-editor-hover {
+        outline: 2px dashed #3b82f6 !important;
+        cursor: pointer !important;
+        position: relative;
+        z-index: 999;
+      }
+      .visual-editor-selected {
+        outline: 3px solid #ef4444 !important;
+        z-index: 1000;
+      }
+      .visual-editor-label {
+        position: fixed;
+        background: #1e293b;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        pointer-events: none;
+        z-index: 10001;
+        display: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
